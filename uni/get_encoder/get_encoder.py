@@ -8,6 +8,9 @@ from torchvision import transforms
 
 from .models.resnet50_trunc import resnet50_trunc_imagenet
 
+# test with resnet18
+from .models.resnet18_trunc import resnet18_trunc_imagenet
+
 def get_norm_constants(which_img_norm: str = 'imagenet'):
     constants_zoo = {
         'imagenet': {'mean': (0.485, 0.456, 0.406), 'std': (0.229, 0.224, 0.225)},
